@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F508090B246B1E5500F9B155 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F508090A246B1E5500F9B155 /* Images.xcassets */; };
+		F508090D246B714000F9B155 /* animalinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508090C246B714000F9B155 /* animalinfo.swift */; };
+		F508090F246B727A00F9B155 /* Animals.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F508090E246B727A00F9B155 /* Animals.xcassets */; };
 		F56A82FE2469CDBD0053495C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A82FD2469CDBD0053495C /* AppDelegate.swift */; };
 		F56A83002469CDBD0053495C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A82FF2469CDBD0053495C /* SceneDelegate.swift */; };
-		F56A83022469CDBD0053495C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A83012469CDBD0053495C /* ViewController.swift */; };
 		F56A83052469CDBD0053495C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56A83032469CDBD0053495C /* Main.storyboard */; };
 		F56A83072469CDC00053495C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56A83062469CDC00053495C /* Assets.xcassets */; };
 		F56A830A2469CDC00053495C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56A83082469CDC00053495C /* LaunchScreen.storyboard */; };
+		F56A831A2469CFD00053495C /* main.viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A83192469CFD00053495C /* main.viewController.swift */; };
+		F56A831C2469CFE80053495C /* game.viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A831B2469CFE80053495C /* game.viewController.swift */; };
+		F56A831E2469CFF50053495C /* maker.viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A831D2469CFF50053495C /* maker.viewController.swift */; };
+		F56A8320246A07DA0053495C /* touched.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F56A831F246A07DA0053495C /* touched.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F508090A246B1E5500F9B155 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F508090C246B714000F9B155 /* animalinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalinfo.swift; sourceTree = "<group>"; };
+		F508090E246B727A00F9B155 /* Animals.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animals.xcassets; sourceTree = "<group>"; };
 		F56A82FA2469CDBD0053495C /* What's This?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's This?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56A82FD2469CDBD0053495C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56A82FF2469CDBD0053495C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F56A83012469CDBD0053495C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F56A83042469CDBD0053495C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F56A83062469CDC00053495C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56A83092469CDC00053495C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F56A830B2469CDC00053495C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56A83192469CFD00053495C /* main.viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.viewController.swift; sourceTree = "<group>"; };
+		F56A831B2469CFE80053495C /* game.viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.viewController.swift; sourceTree = "<group>"; };
+		F56A831D2469CFF50053495C /* maker.viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maker.viewController.swift; sourceTree = "<group>"; };
+		F56A831F246A07DA0053495C /* touched.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touched.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +70,15 @@
 			children = (
 				F56A82FD2469CDBD0053495C /* AppDelegate.swift */,
 				F56A82FF2469CDBD0053495C /* SceneDelegate.swift */,
-				F56A83012469CDBD0053495C /* ViewController.swift */,
+				F56A83192469CFD00053495C /* main.viewController.swift */,
+				F56A831B2469CFE80053495C /* game.viewController.swift */,
+				F56A831D2469CFF50053495C /* maker.viewController.swift */,
+				F508090C246B714000F9B155 /* animalinfo.swift */,
 				F56A83032469CDBD0053495C /* Main.storyboard */,
+				F508090E246B727A00F9B155 /* Animals.xcassets */,
+				F508090A246B1E5500F9B155 /* Images.xcassets */,
 				F56A83062469CDC00053495C /* Assets.xcassets */,
+				F56A831F246A07DA0053495C /* touched.jpg */,
 				F56A83082469CDC00053495C /* LaunchScreen.storyboard */,
 				F56A830B2469CDC00053495C /* Info.plist */,
 			);
@@ -125,9 +143,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F508090B246B1E5500F9B155 /* Images.xcassets in Resources */,
 				F56A830A2469CDC00053495C /* LaunchScreen.storyboard in Resources */,
 				F56A83072469CDC00053495C /* Assets.xcassets in Resources */,
+				F56A8320246A07DA0053495C /* touched.jpg in Resources */,
 				F56A83052469CDBD0053495C /* Main.storyboard in Resources */,
+				F508090F246B727A00F9B155 /* Animals.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56A83022469CDBD0053495C /* ViewController.swift in Sources */,
 				F56A82FE2469CDBD0053495C /* AppDelegate.swift in Sources */,
+				F508090D246B714000F9B155 /* animalinfo.swift in Sources */,
 				F56A83002469CDBD0053495C /* SceneDelegate.swift in Sources */,
+				F56A831E2469CFF50053495C /* maker.viewController.swift in Sources */,
+				F56A831A2469CFD00053495C /* main.viewController.swift in Sources */,
+				F56A831C2469CFE80053495C /* game.viewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

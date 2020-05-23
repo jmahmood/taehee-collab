@@ -10,6 +10,10 @@
 		F508090B246B1E5500F9B155 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F508090A246B1E5500F9B155 /* Images.xcassets */; };
 		F508090D246B714000F9B155 /* animalinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508090C246B714000F9B155 /* animalinfo.swift */; };
 		F508090F246B727A00F9B155 /* Animals.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F508090E246B727A00F9B155 /* Animals.xcassets */; };
+		F519C4822474A84200573A35 /* Hedgehog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F519C47E2474A84200573A35 /* Hedgehog.mp3 */; };
+		F519C4832474A84200573A35 /* Cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F519C47F2474A84200573A35 /* Cat.mp3 */; };
+		F519C4842474A84200573A35 /* Dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F519C4802474A84200573A35 /* Dog.mp3 */; };
+		F519C4852474A84200573A35 /* Rabbit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F519C4812474A84200573A35 /* Rabbit.mp3 */; };
 		F56A82FE2469CDBD0053495C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A82FD2469CDBD0053495C /* AppDelegate.swift */; };
 		F56A83002469CDBD0053495C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56A82FF2469CDBD0053495C /* SceneDelegate.swift */; };
 		F56A83052469CDBD0053495C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56A83032469CDBD0053495C /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 		F508090A246B1E5500F9B155 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F508090C246B714000F9B155 /* animalinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalinfo.swift; sourceTree = "<group>"; };
 		F508090E246B727A00F9B155 /* Animals.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Animals.xcassets; sourceTree = "<group>"; };
+		F519C47E2474A84200573A35 /* Hedgehog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hedgehog.mp3; sourceTree = "<group>"; };
+		F519C47F2474A84200573A35 /* Cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cat.mp3; sourceTree = "<group>"; };
+		F519C4802474A84200573A35 /* Dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dog.mp3; sourceTree = "<group>"; };
+		F519C4812474A84200573A35 /* Rabbit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rabbit.mp3; sourceTree = "<group>"; };
 		F56A82FA2469CDBD0053495C /* What's This?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's This?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56A82FD2469CDBD0053495C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56A82FF2469CDBD0053495C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F519C47D2474A84200573A35 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				F519C47E2474A84200573A35 /* Hedgehog.mp3 */,
+				F519C47F2474A84200573A35 /* Cat.mp3 */,
+				F519C4802474A84200573A35 /* Dog.mp3 */,
+				F519C4812474A84200573A35 /* Rabbit.mp3 */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
 		F56A82F12469CDBD0053495C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,7 @@
 				F56A831F246A07DA0053495C /* touched.jpg */,
 				F56A83082469CDC00053495C /* LaunchScreen.storyboard */,
 				F56A830B2469CDC00053495C /* Info.plist */,
+				F519C47D2474A84200573A35 /* sound */,
 			);
 			path = "What's This?";
 			sourceTree = "<group>";
@@ -146,7 +166,11 @@
 				F508090B246B1E5500F9B155 /* Images.xcassets in Resources */,
 				F56A830A2469CDC00053495C /* LaunchScreen.storyboard in Resources */,
 				F56A83072469CDC00053495C /* Assets.xcassets in Resources */,
+				F519C4822474A84200573A35 /* Hedgehog.mp3 in Resources */,
+				F519C4852474A84200573A35 /* Rabbit.mp3 in Resources */,
 				F56A8320246A07DA0053495C /* touched.jpg in Resources */,
+				F519C4832474A84200573A35 /* Cat.mp3 in Resources */,
+				F519C4842474A84200573A35 /* Dog.mp3 in Resources */,
 				F56A83052469CDBD0053495C /* Main.storyboard in Resources */,
 				F508090F246B727A00F9B155 /* Animals.xcassets in Resources */,
 			);

@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  What's This?
+//  Xylophone
 //
-//  Created by Tae-hee on 2020-05-11.
-//  Copyright © 2020 Tae-hee. All rights reserved.
+//  Created by Angela Yu on 28/06/2019.
+//  Copyright © 2019 The App Brewery. All rights reserved.
 //
 
 import UIKit

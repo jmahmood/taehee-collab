@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -57,6 +58,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZn-B2-jlk">
                                 <rect key="frame" x="20" y="512" width="374" height="320"/>
+                                <color key="tintColor" red="0.98431372549999996" green="0.57254901960000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="made by"/>
                                 <connections>
                                     <segue destination="TkG-Jb-Od7" kind="presentation" id="c4e-rP-2hz"/>
@@ -102,88 +104,140 @@
                                 <rect key="frame" x="133" y="410" width="77" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gml-dE-Zj8">
-                                <rect key="frame" x="70" y="170" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gml-dE-Zj8">
+                                <rect key="frame" x="0.0" y="96" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gml-dE-Zj8" secondAttribute="height" multiplier="1:1" id="Eol-SG-uov"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGj-or-sF4">
-                                <rect key="frame" x="70" y="437" width="159" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="speaker.2.fill" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkt-PR-trO">
-                                <rect key="frame" x="90" y="505" width="77" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="speaker.2.fill" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pS-mC-lop">
-                                <rect key="frame" x="283" y="437" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="1.square" catalog="system"/>
-                                <connections>
-                                    <action selector="touchUpSubmitButton1:" destination="I3x-MN-glC" eventType="touchUpInside" id="OrE-yo-4Ez"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="978-7E-L8R">
-                                <rect key="frame" x="283" y="504" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="2.square" catalog="system"/>
-                                <connections>
-                                    <action selector="touchUpSubmitButton2:" destination="I3x-MN-glC" eventType="touchUpInside" id="c7L-la-nIJ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY6-FB-O2t">
-                                <rect key="frame" x="177" y="638" width="42" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNf-IP-cHz">
-                                <rect key="frame" x="177" y="712" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="resubmit"/>
-                                <connections>
-                                    <action selector="touchUpResetButton:" destination="I3x-MN-glC" eventType="touchUpInside" id="sKC-H2-499"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeS-UO-P3Y">
-                                <rect key="frame" x="90" y="539" width="77" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="speaker.2.fill" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFG-yd-tOL">
-                                <rect key="frame" x="90" y="597" width="77" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="speaker.2.fill" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uT-6u-X91">
-                                <rect key="frame" x="269" y="554" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="3.square" catalog="system"/>
-                                <connections>
-                                    <action selector="touchUpSubmitButton3:" destination="I3x-MN-glC" eventType="touchUpInside" id="ZBE-fy-PZp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g8-RG-dnb">
-                                <rect key="frame" x="269" y="617" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="4.square" catalog="system"/>
-                                <connections>
-                                    <action selector="touchUpSubmitButton4:" destination="I3x-MN-glC" eventType="touchUpInside" id="2LZ-pq-LrQ"/>
-                                    <action selector="touchUpSubmitButton:" destination="I3x-MN-glC" eventType="touchUpInside" id="xUD-Ft-x6V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfx-5t-JOu">
-                                <rect key="frame" x="167" y="769" width="78" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="house.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="refresh:" destination="I3x-MN-glC" eventType="touchUpInside" id="27S-48-b1b"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pdo-4T-5gf">
+                                <rect key="frame" x="40" y="530" width="334" height="263"/>
+                                <subviews>
+                                    <stackView opaque="NO" tag="111" contentMode="scaleToFill" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="hvf-Ib-jex">
+                                        <rect key="frame" x="77" y="0.0" width="180" height="37"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-Rz-oha">
+                                                <rect key="frame" x="0.0" y="0.0" width="57" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Dog" image="speaker.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="I3x-MN-glC" eventType="touchUpInside" id="LR2-Ow-5Nl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="151" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGx-S5-0Nm">
+                                                <rect key="frame" x="150" y="0.0" width="30" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Dog"/>
+                                                <connections>
+                                                    <action selector="touchUpSubmitButton:" destination="I3x-MN-glC" eventType="touchUpInside" id="091-nE-Utx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" tag="112" contentMode="scaleToFill" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="YUt-GF-0ij">
+                                        <rect key="frame" x="79.5" y="45" width="175" height="37.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXw-AP-fab">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Cat" image="speaker.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="I3x-MN-glC" eventType="touchUpInside" id="H4n-37-85L"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="152" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX8-BT-y5w">
+                                                <rect key="frame" x="145" y="0.0" width="30" height="37.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Cat"/>
+                                                <connections>
+                                                    <action selector="touchUpSubmitButton:" destination="I3x-MN-glC" eventType="touchUpInside" id="jC3-jU-WVg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" tag="113" contentMode="scaleToFill" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="oG9-ht-Rjh">
+                                        <rect key="frame" x="60" y="90.5" width="214" height="37"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0g-M3-v0G">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Rabbit" image="speaker.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="I3x-MN-glC" eventType="touchUpInside" id="zUS-0P-7vg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="153" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1E-6V-sqE">
+                                                <rect key="frame" x="169" y="0.0" width="45" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Rabbit"/>
+                                                <connections>
+                                                    <action selector="touchUpSubmitButton:" destination="I3x-MN-glC" eventType="touchUpInside" id="Ftm-QK-2yr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="ekO-Xc-E0K">
+                                        <rect key="frame" x="30.5" y="135.5" width="273" height="37"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVr-gq-oGj">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Hedgehog" image="speaker.2.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="I3x-MN-glC" eventType="touchUpInside" id="yIT-Qa-HWd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="154" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haY-AF-J6a">
+                                                <rect key="frame" x="201" y="0.0" width="72" height="37"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Hedgehog"/>
+                                                <connections>
+                                                    <action selector="touchUpSubmitButton:" destination="I3x-MN-glC" eventType="touchUpInside" id="pf0-oh-ayq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="97" translatesAutoresizingMaskIntoConstraints="NO" id="50H-jY-dmB">
+                                        <rect key="frame" x="146" y="180.5" width="42" height="37.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzT-An-Ium">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="37.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfZ-cS-YsX">
+                                        <rect key="frame" x="155.5" y="226" width="23.5" height="37"/>
+                                        <color key="tintColor" red="0.98431372549999996" green="0.57254901960000004" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="house.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="refresh:" destination="I3x-MN-glC" eventType="touchUpInside" id="NIf-X0-ahp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pdo-4T-5gf" firstAttribute="centerX" secondItem="fyO-vq-UMb" secondAttribute="centerX" id="5K5-0i-xol"/>
+                            <constraint firstItem="pdo-4T-5gf" firstAttribute="top" secondItem="gml-dE-Zj8" secondAttribute="bottom" constant="20" id="8BU-YM-jLf"/>
+                            <constraint firstItem="roR-L1-VGD" firstAttribute="bottom" secondItem="pdo-4T-5gf" secondAttribute="bottom" constant="20" id="UHB-xt-p5I"/>
+                            <constraint firstItem="pdo-4T-5gf" firstAttribute="leading" secondItem="roR-L1-VGD" secondAttribute="leading" constant="40" id="Uud-QQ-QhN"/>
+                            <constraint firstItem="gml-dE-Zj8" firstAttribute="centerX" secondItem="fyO-vq-UMb" secondAttribute="centerX" id="aQP-dz-dUk"/>
+                            <constraint firstItem="gml-dE-Zj8" firstAttribute="top" secondItem="roR-L1-VGD" secondAttribute="top" constant="8" id="bqu-pp-ZwL"/>
+                            <constraint firstItem="roR-L1-VGD" firstAttribute="trailing" secondItem="pdo-4T-5gf" secondAttribute="trailing" constant="40" id="ffR-iK-d5r"/>
+                            <constraint firstItem="gml-dE-Zj8" firstAttribute="width" secondItem="fyO-vq-UMb" secondAttribute="width" id="hRl-TK-bAr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="roR-L1-VGD"/>
                     </view>
                     <toolbarItems>
@@ -197,13 +251,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="animalImageView" destination="gml-dE-Zj8" id="QHO-Ye-1gP"/>
-                        <outlet property="resultLabel" destination="dY6-FB-O2t" id="v5L-t1-Z8z"/>
-                        <outlet property="sound1" destination="uGj-or-sF4" id="gcD-Ba-gRo"/>
-                        <outlet property="sound2" destination="Qkt-PR-trO" id="BI1-pt-8Gm"/>
-                        <outlet property="sound3" destination="UeS-UO-P3Y" id="v1R-27-eZV"/>
-                        <outlet property="sound4" destination="YFG-yd-tOL" id="cYi-0H-vpE"/>
-                        <outlet property="touchUpSubmitButton1" destination="5pS-mC-lop" id="TK5-00-YEu"/>
-                        <outlet property="touchUpSubmitButton2" destination="978-7E-L8R" id="rd9-mz-PXU"/>
+                        <outlet property="resultLabel" destination="UzT-An-Ium" id="rUv-A1-mE5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWF-oQ-3dy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -218,29 +266,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="touched.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bgp-ax-ziA">
-                                <rect key="frame" x="10" y="8" width="394" height="267"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touched.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bgp-ax-ziA">
+                                <rect key="frame" x="10" y="8" width="394" height="394"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bgp-ax-ziA" secondAttribute="height" multiplier="1:1" id="obH-ju-sIF"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bc-Il-qjU">
-                                <rect key="frame" x="195" y="715" width="24" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="house.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="touchUpInsideDismissButton:" destination="TkG-Jb-Od7" eventType="touchUpInside" id="Wxs-dh-2wm"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-BP-4NE">
                                 <rect key="frame" x="159" y="385" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bc-Il-qjU">
+                                <rect key="frame" x="195.5" y="717" width="23.5" height="22"/>
+                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="house.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="touchUpInsideDismissButton:" destination="TkG-Jb-Od7" eventType="touchUpInside" id="Wxs-dh-2wm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="3Bc-Il-qjU" firstAttribute="centerX" secondItem="dbS-v3-eZi" secondAttribute="centerX" id="M2B-5L-N0a"/>
+                            <constraint firstItem="CaY-xQ-5k5" firstAttribute="bottom" secondItem="3Bc-Il-qjU" secondAttribute="bottom" constant="20" id="aqj-eD-YVN"/>
                             <constraint firstItem="bgp-ax-ziA" firstAttribute="top" secondItem="CaY-xQ-5k5" secondAttribute="top" constant="8" id="eEx-gp-cah"/>
                             <constraint firstItem="CaY-xQ-5k5" firstAttribute="trailing" secondItem="bgp-ax-ziA" secondAttribute="trailing" constant="10" id="iu4-Ld-qu9"/>
                             <constraint firstItem="bgp-ax-ziA" firstAttribute="leading" secondItem="CaY-xQ-5k5" secondAttribute="leading" constant="10" id="pHH-GG-hcP"/>
@@ -277,10 +327,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.square" catalog="system" width="64" height="56"/>
-        <image name="2.square" catalog="system" width="64" height="56"/>
-        <image name="3.square" catalog="system" width="64" height="56"/>
-        <image name="4.square" catalog="system" width="64" height="56"/>
         <image name="cat" width="330" height="330"/>
         <image name="dog" width="330" height="330"/>
         <image name="hedgehog" width="330" height="330"/>

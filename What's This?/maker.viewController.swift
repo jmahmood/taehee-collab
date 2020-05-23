@@ -17,7 +17,8 @@ class maker: UIViewController {
     //MARK: - Methods
     //MARK: IBActions
     @IBAction func touchUpInsideDismissButton(_ sender: Any) {
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
+        
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

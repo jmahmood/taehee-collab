@@ -32,13 +32,13 @@ class main: UIViewController {
             return
         }
             
-        guard let info: AnimalInfo = self.AnimalInfo(for: tag) else { return }
+        guard let info: AnimalInfo = self.AnimalInfo2(for: tag) else { return }
             
         nextViewController.AnimalInfo = info
         }
     
        //MARK: Privates
-   private func AnimalInfo(for tag: ButtonTag) -> AnimalInfo? {
+   private func AnimalInfo2(for tag: ButtonTag) -> AnimalInfo? {
        
        let assetName: String
        

@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import os.log
 
 class game: UIViewController {
 
@@ -65,15 +66,15 @@ class game: UIViewController {
     //남은 문제: 코드를 어떻게 작성해야하는지 모름
     @IBAction func touchUpSubmitButton(_ sender: UIButton) {
 
-        var userAnswer = sender.titleLabel?.text
-            
-        if userAnswer  = AnimalInfo.name {
-                   self.resultLabel.text = "RIGHT!"
-        } else {
-                   self.resultLabel.text = "WRONG!"
-               } 
+        if let userAnswer = sender.titleLabel?.text {
+
+            if userAnswer.lowercased() == AnimalInfo.imageName {
+                       self.resultLabel.text = "RIGHT!"
+            } else {
+                       self.resultLabel.text = "WRONG!"
            }
+       }
     }
     
-
+}
 
